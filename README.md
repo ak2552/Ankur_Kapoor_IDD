@@ -53,6 +53,8 @@ If we open phone camera and look at the LED thru it, we can clearly see it blink
 
 ## C.(e) Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md
 
+
+[Code] (code1.ino) 
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
@@ -87,8 +89,7 @@ void loop() {
  # 2. Blink your LED
 2.(a) Now modify the circuit and program so that you can blink an external LED on pin 9
 
-Video
-https://youtu.be/bbRhafcXYfM
+[Video](https://youtu.be/bbRhafcXYfM)
 
 # D. Manually Fade an LED
 ## D.1 Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?
