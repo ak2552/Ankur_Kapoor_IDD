@@ -1,26 +1,38 @@
  
 
-Part A. Set Up a Breadboard
- 
+# Part A. Set Up a Breadboard
+ ![69840349_2362419283980619_34543116291670016_n](https://user-images.githubusercontent.com/54294244/64662594-fff31300-d416-11e9-9e3c-8e93ccfc8e6a.jpg)
 
-Part B. Manually Blink a LED
-a. What color stripes are on a 100 Ohm resistor?
+# Part B. Manually Blink a LED
+## a. What color stripes are on a 100 Ohm resistor?
+
 1st Band: - Brown = 1 
+
 2nd Band: - Black = 0 
+
 3rd Band: - Brown = 10 (Multiplier)
+
 4th Band Tolerance can be Gold/Silver/Nothing. 
-b. What do you have to do to light your LED?
+
+## b. What do you have to do to light your LED?
 We need to build the circuit as shown in the part A. Below are the steps: - 
+
 •	Connect Push Button to 5V and to positive leg of the LED. 
+
 •	Connect resistor to the negative leg of the LED  
+
 •	Connect the negative rail of the bread board to the other leg of the resistor
+
 •	Connect the positive rail of the bread board to the 5V pin of the Arduino. 
+
 •	Connect the negative rail of the bread board to the ground pin of the board. 
+
 •	Supply power to the board through USB.
+
 •	Push the button the LED will be lit. 
 
+## Part.C Blink LED with Arduino
 
-Part.C Blink LED with Arduino
 C.(a) What line(s) of code do you need to change to make the LED blink (like, at all)?
  
 No change to the code is needed as the code used in example already detects and configured to the correct pin. 
