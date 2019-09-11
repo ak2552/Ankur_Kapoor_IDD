@@ -54,7 +54,7 @@ If we open phone camera and look at the LED thru it, we can clearly see it blink
 ## C.(e) Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md
 
 
-[Code] (code1.ino) 
+[Code](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/code1.ino) 
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
