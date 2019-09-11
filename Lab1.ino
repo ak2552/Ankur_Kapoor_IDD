@@ -1,5 +1,3 @@
-
-
 # Part A. Set Up a Breadboard
  ![69840349_2362419283980619_34543116291670016_n](https://user-images.githubusercontent.com/54294244/64662594-fff31300-d416-11e9-9e3c-8e93ccfc8e6a.jpg)
 
@@ -17,19 +15,19 @@
 ## b. What do you have to do to light your LED?
 We need to build the circuit as shown in the part A. Below are the steps: - 
 
-•	Connect Push Button to 5V and to positive leg of the LED. 
+â€¢	Connect Push Button to 5V and to positive leg of the LED. 
 
-•	Connect resistor to the negative leg of the LED  
+â€¢	Connect resistor to the negative leg of the LED  
 
-•	Connect the negative rail of the bread board to the other leg of the resistor
+â€¢	Connect the negative rail of the bread board to the other leg of the resistor
 
-•	Connect the positive rail of the bread board to the 5V pin of the Arduino. 
+â€¢	Connect the positive rail of the bread board to the 5V pin of the Arduino. 
 
-•	Connect the negative rail of the bread board to the ground pin of the board. 
+â€¢	Connect the negative rail of the bread board to the ground pin of the board. 
 
-•	Supply power to the board through USB.
+â€¢	Supply power to the board through USB.
 
-•	Push the button the LED will be lit. 
+â€¢	Push the button the LED will be lit. 
 
 # Part.C Blink LED with Arduino
 
@@ -76,6 +74,6 @@ Changing the LED pin from 9 to 11
 
 ## b. What is analogWrite()? How is that different than digitalWrite()?
 
-•	analogwrite() allows to fade the light across different brightness levels.  
+â€¢	analogwrite() allows to fade the light across different brightness levels.  
 
-•	digitalWrite() pin writes either High or Low to an output pin which is basically either 5V or GND. So the digitalwrite can be used to turn on and of an LED  
+â€¢	digitalWrite() pin writes either High or Low to an output pin which is basically either 5V or GND. So the digitalwrite can be used to turn on and of an LED  
