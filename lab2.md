@@ -26,3 +26,20 @@ I made No mistakes
 lcd.print("Hello World"); to lcd.print("Ankur Kapoor");
 
 ### e. Include a copy of your Lowly Multimeter code in your lab write-up.
+
+[Code](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/multimeter_code.io)
+
+## Part C. Using a time-based digital sensor
+
+[Rotatory Video](https://www.youtube.com/watch?v=kz87V_5-MDw)
+
+## Part D. Make your Arduino sing!
+### a. How would you change the code to make the song play twice as fast?
+
++ Simply change noteDuration to less than a 1000, e.g. noteDuration = 500
+
++ Can also change the pauseBetweenNotes to half the value to make it play twice as fast
+
+### b. What song is playing?
+   
+   Star Wars theme
