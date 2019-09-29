@@ -52,3 +52,10 @@ For the Flex sensor it is linear relationship
 For softpot it is linear relationship
 
 For photocell it is a Logarithmic relationship.
+
+### 2. Accelerometer
+### a. Include your accelerometer read-out code in your write-up.
+
+[Code](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/accelerometer.ino)
+
+
