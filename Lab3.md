@@ -42,9 +42,13 @@ setColor(y,0,0);
 
 ### d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?
 
-With a 22k resistor I was able to get a much more reasonable range of voltages from 20 to 1010, whereas with a 10k resistor I was able to get from 180 to 980.
+ photo cell: 10k 
+ 
+ softspot: 10k
 
-Softpot In Action
+### e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)
+For the Flex sensor it is linear relationship
 
-Photocell In Action
+For softpot it is linear relationship
 
+For photocell it is a Logarithmic relationship.
