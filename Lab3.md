@@ -96,3 +96,24 @@ For I2C devices, we will need to find out the variation of range for reading val
  
  
 ### Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.
+
+#include <EEPROM.h>
+
+ 
+
+int sensorPin = 0;    // select the input pin for the potentiometer
+ 
+
+void setup() {
+  // initialize serial communication:
+  Serial.begin(9600);  
+ 
+}
+
+void loop() {
+ 
+
+  Serial.println(analogRead(sensorPin));
+  delay(100);
+ 
+}
