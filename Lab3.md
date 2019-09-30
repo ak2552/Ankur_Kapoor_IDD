@@ -103,7 +103,7 @@ For I2C devices, we will need to find out the variation of range for reading val
 
  
 
-int sensorPin = 0;    // select the input pin for the potentiometer
+int FSRPin = 0;    // select the input pin for the potentiometer
  
 
 void setup() {
@@ -115,9 +115,15 @@ void setup() {
 void loop() {
  
 
-  Serial.println(analogRead(sensorPin));
+  Serial.println(analogRead(FSRPin));
   delay(100);
  
 }
 
 ```
+
+## 2. Design your logger
+### a. Insert here a copy of your final state diagram.
+
+## 3. Create your data logger!
+### a. Record and upload a short demo video of your logger in action.
