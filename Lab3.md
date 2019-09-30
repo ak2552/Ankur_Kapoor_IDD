@@ -61,6 +61,9 @@ For photocell it is a Logarithmic relationship.
 # Graphic Display
 
 Take a picture of your screen working insert it here!
+Reading A0 value
+
+[Code](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/graphic_lab3.ino)
 
 ![Soldered](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/IMG_2162.JPG)
 
