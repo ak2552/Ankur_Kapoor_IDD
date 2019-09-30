@@ -61,6 +61,7 @@ For photocell it is a Logarithmic relationship.
 # Graphic Display
 
 Take a picture of your screen working insert it here!
+
 Reading A0 value
 
 [Code](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/graphic_lab3.ino)
@@ -73,21 +74,19 @@ Reading A0 value
 ## 1. Reading and writing values to the Arduino EEPROM
 ### a. Does it matter what actions are assigned to which state? Why?
 
-Yes, the clear state needs to be on one of the sides with the reading and writing states next to each other. If the clear state was in the middle it would be impossible to read a value from EEPROM after storing it considering that it would be cleared first if you tried going from the write to rad state.
+Yes, the order matters in this case. For example in Write->Clear->Read state as clear state is in the middle then it won't be possible to read after we have written since we have a clear function in the middle. 
 
 ### b. Why is the code here all in the setup() functions and not in the loop() functions?
 
-Because whenever we change the state, we only want the state’s main code to execute once and not repeatedly while the device remains in that state. For example, when entering the reading state, we only want to read the data stored once the same with the write state we only want to save once when we enter the state.
+The code in setup() function occurs only once whereas in the loop() function the code executes more than once. Therefore if Read/write/clear process is in loop() function than the loop will start the Read/write/clear process again and again without finishing. 
 
 ### c. How many byte-sized data samples can you store on the Atmega328?
 
-The Atmega328P has 1024 bytes of EEPROM memory and thus you will be able to save up to 1024 byte-sized data samples on it.
+  1024 byte-sized data samples on  Atmega328
 
 ### d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?
 
-For analog pins we get 10-bit data that needs to be converted to 8-bit data so that it can be saved in the EEPROM. We can accomplish this by mapping the 10-bit value 0-1023 to an 8-bit value 0-255. The new 8-bit value might not be precisely as accurate as the 10-bit value as some information is lost but it is the best possible way. The 8-bit value can later be recovered from memory and inflated to a number between 0-1023 again and will be within a few numbers of the correct original number. The other way is break up the 10-bit number and save it as 4, 8-bit values that can be summed together to create the original 10-bit number.
-
-For I2C we do not have the format of the data we will receive. Because of the varying possible formats of data, we will receive each case will have to be evaluated individually. Then it will have to be decided if the received data can be saved as is or need to be converted to 8-bit data using the map function or if the received value will have to be stored across multiple 8-bit values.
+A byte-sized data is equal to 8 bits, this means a value that is in the range of 0-255. We can use the map function to map the analog reading of 0-1023 to 0-255. As for I2C devices, we would need to figure out the range in which the reading value varies and map it to 0-255.
 
 ### e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the EEPROMPut example)
 
