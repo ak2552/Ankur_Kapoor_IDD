@@ -86,10 +86,13 @@ The code in setup() function occurs only once whereas in the loop() function the
 
 ### d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?
 
-A byte-sized data is equal to 8 bits, this means a value that is in the range of 0-255. We can use the map function to map the analog reading of 0-1023 to 0-255. As for I2C devices, we would need to figure out the range in which the reading value varies and map it to 0-255.
+An analog reading is between 0-1023 but a byte sized data is in the range of 0-255. For this conversion we will use map() function. 
+
+For I2C devices, we will need to find out the variation of range for reading values and then convert to 0-255 using map function. 
 
 ### e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the EEPROMPut example)
 
-By breaking the data up into byte sized data. For example, an int could be 2 or 4 bytes with long int being 8 bytes. Since we know this it is possible to break up an int into 2 or 4 bytes these can then be accurately stored in the EEPROM in 2 or 4 memory addresses.
-
-Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.
+ We can make use of  EEPROM.put() function. This function allows to write data of primitive types. If the data is bigger this will store in consecutive addresses.
+ 
+ 
+### Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.
