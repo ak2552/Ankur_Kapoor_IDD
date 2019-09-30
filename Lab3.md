@@ -62,7 +62,7 @@ For photocell it is a Logarithmic relationship.
 
 Take a picture of your screen working insert it here!
 
-![Soldered](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/IMG_2160.jpg)
+![Soldered](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/IMG_2162.JPG)
 
 ## Part D. Logging values to the EEPROM and reading them back
 
