@@ -58,4 +58,6 @@ For photocell it is a Logarithmic relationship.
 
 [Code](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/accelerometer.ino)
 
+# Graphic Display
 
+![Soldered](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/IMG_2160.jpg)
