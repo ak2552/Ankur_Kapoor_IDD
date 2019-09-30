@@ -97,6 +97,8 @@ For I2C devices, we will need to find out the variation of range for reading val
  
 ### Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.
 
+```ruby
+
 #include <EEPROM.h>
 
  
@@ -117,3 +119,5 @@ void loop() {
   delay(100);
  
 }
+
+```
