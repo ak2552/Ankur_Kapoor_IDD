@@ -60,4 +60,34 @@ For photocell it is a Logarithmic relationship.
 
 # Graphic Display
 
+Take a picture of your screen working insert it here!
+
 ![Soldered](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/IMG_2160.jpg)
+
+## Part D. Logging values to the EEPROM and reading them back
+
+
+## 1. Reading and writing values to the Arduino EEPROM
+### a. Does it matter what actions are assigned to which state? Why?
+
+Yes, the clear state needs to be on one of the sides with the reading and writing states next to each other. If the clear state was in the middle it would be impossible to read a value from EEPROM after storing it considering that it would be cleared first if you tried going from the write to rad state.
+
+### b. Why is the code here all in the setup() functions and not in the loop() functions?
+
+Because whenever we change the state, we only want the state’s main code to execute once and not repeatedly while the device remains in that state. For example, when entering the reading state, we only want to read the data stored once the same with the write state we only want to save once when we enter the state.
+
+### c. How many byte-sized data samples can you store on the Atmega328?
+
+The Atmega328P has 1024 bytes of EEPROM memory and thus you will be able to save up to 1024 byte-sized data samples on it.
+
+### d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?
+
+For analog pins we get 10-bit data that needs to be converted to 8-bit data so that it can be saved in the EEPROM. We can accomplish this by mapping the 10-bit value 0-1023 to an 8-bit value 0-255. The new 8-bit value might not be precisely as accurate as the 10-bit value as some information is lost but it is the best possible way. The 8-bit value can later be recovered from memory and inflated to a number between 0-1023 again and will be within a few numbers of the correct original number. The other way is break up the 10-bit number and save it as 4, 8-bit values that can be summed together to create the original 10-bit number.
+
+For I2C we do not have the format of the data we will receive. Because of the varying possible formats of data, we will receive each case will have to be evaluated individually. Then it will have to be decided if the received data can be saved as is or need to be converted to 8-bit data using the map function or if the received value will have to be stored across multiple 8-bit values.
+
+### e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the EEPROMPut example)
+
+By breaking the data up into byte sized data. For example, an int could be 2 or 4 bytes with long int being 8 bytes. Since we know this it is possible to break up an int into 2 or 4 bytes these can then be accurately stored in the EEPROM in 2 or 4 memory addresses.
+
+Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.
