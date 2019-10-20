@@ -10,9 +10,11 @@ For your write up, include:
 
 
 3) At least one photo of your box taken in the MakerLab's Portable Photo Studio (or somewhere else, but of similar quality).
-The lighting in MakerLab's Portable Photo Studio doesn't work, so the picture is a bit dark...
+ 
+ ![CIRCUIT](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/IMG_2511.JPG)
 
-Jack photo
+ ![BOX](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/IMG_2514G)
+
 
 ### 4) A video of your box in action.
 
