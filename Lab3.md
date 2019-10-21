@@ -125,5 +125,9 @@ void loop() {
 ## 2. Design your logger
 ### a. Insert here a copy of your final state diagram.
 
+![Diagram](https://github.com/ak2552/Ankur_Kapoor_IDD/blob/master/IMG_2531.JPG)
+
+
+
 ## 3. Create your data logger!
 ### a. Record and upload a short demo video of your logger in action.
